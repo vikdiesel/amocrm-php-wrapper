@@ -35,7 +35,9 @@ PHP-класс для работы с AmoCRM через [упрощенную а
 
 ![AmoCRM авторизация API](https://marketto.ru/images/amocrm-2.png?v=1)
 
-#### Простой пример
+#### Простой пример: добавление контакта и сделки в AmoCRM
+
+Пример инициализации и добавления контакта и сделки (лида) в AmoCRM
 
 <pre>
 use AmoCrmPhpWrapper\Package\AmoClient;
