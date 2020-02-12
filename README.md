@@ -1,5 +1,7 @@
 # AmoCRM PHP API 2020
 
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg)
+
 PHP-класс для работы с AmoCRM через [упрощенную авторизацию](#упрощенная-авторизация-amocrm).
 
 ## Что умеет?
@@ -27,11 +29,11 @@ PHP-класс для работы с AmoCRM через [упрощенную а
 
 Перейдите в раздел *Настройки -> Интеграции* и щелкните *Создать Интеграцию*
 
-![Laravel Bulma Authentication Preset](https://marketto.ru/images/amocrm-1.png)
+![AmoCRM создание интеграции](https://marketto.ru/images/amocrm-1.png?v=1)
 
 После сохранения вы сможете получить нужные ключи.
 
-![Laravel Bulma Authentication Preset](https://marketto.ru/images/amocrm-2.png)
+![AmoCRM авторизация API](https://marketto.ru/images/amocrm-2.png?v=1)
 
 #### Простой пример
 
