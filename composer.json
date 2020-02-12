@@ -1,9 +1,17 @@
 {
   "name": "vikdiesel/amocrm-php-wrapper",
-  "description": "AmoCRM php wrapper",
+  "description": "AmoCRM PHP wrapper",
   "keywords": [
     "amocrm",
     "php"
+  ],
+  "authors": [
+    {
+      "name": "Viktor Kuzhelnyi",
+      "email": "viktor@marketto.ru",
+      "homepage": "https://marketto.ru",
+      "role": "Developer"
+    }
   ],
   "license": "MIT",
   "autoload": {
