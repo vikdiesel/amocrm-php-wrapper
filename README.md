@@ -1,5 +1,4 @@
 # AmoCRM PHP API 2020
-======
 
 PHP-класс для работы с AmoCRM через [упрощенную авторизацию](#упрощенная-авторизация-amocrm).
 
@@ -55,44 +54,44 @@ $redirect_uri = 'https://example.com';
 $initial_code = '';
 
 try {
-	$amoClient = new AmoClient( $amo_domain, $client_id, $client_secret, $redirect_uri, $initial_code );
+  $amoClient = new AmoClient( $amo_domain, $client_id, $client_secret, $redirect_uri, $initial_code );
 
-	$name  = 'Lubjek Strowinski';
-	$phone = '+447824200245';
-	$sale  = '7777';
+  $name  = 'Lubjek Strowinski';
+  $phone = '+447824200245';
+  $sale  = '7777';
 
-	$r = $amoClient->request( '/api/v2/contacts', [
-		'add' => [
-			[
-				'name'          => $name,
-				'tags'          => 'test-case',
-				'custom_fields' => [
-					[
-						'id'     => '406896',
-						'values' => [
-							[
-								'value' => $phone,
-								'enum'  => 'WORK'
-							]
-						]
-					]
-				]
-			]
-		]
-	] );
+  $r = $amoClient->request( '/api/v2/contacts', [
+    'add' => [
+      [
+        'name'          => $name,
+        'tags'          => 'test-case',
+        'custom_fields' => [
+          [
+            'id'     => '406896',
+            'values' => [
+              [
+                'value' => $phone,
+                'enum'  => 'WORK'
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ] );
 
-	$r = $amoClient->request( '/api/v2/leads', [
-		'add' => [
-			[
-				'name'        => $name,
-				'tags'        => 'test-case',
-				'sale'        => $sale,
-				'contacts_id' => $r->_embedded->items[0]->id
-			]
-		]
-	] );
+  $r = $amoClient->request( '/api/v2/leads', [
+    'add' => [
+      [
+        'name'        => $name,
+        'tags'        => 'test-case',
+        'sale'        => $sale,
+        'contacts_id' => $r->_embedded->items[0]->id
+      ]
+    ]
+  ] );
 
 } catch ( \AmoCrmPhpWrapper\Package\Exception\AmoClientException $exception ) {
-	echo $exception->getMessage();
+  echo $exception->getMessage();
 }
 </pre>
