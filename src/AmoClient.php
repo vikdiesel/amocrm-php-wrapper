@@ -26,7 +26,7 @@ class AmoClient {
 	private $time;
 
 	public function __construct($domain, $client_id, $client_secret, $redirect_uri, $initial_code = null) {
-		$this->accessTokenFile = __DIR__ . '/../.var/accessToken.json';
+		$this->accessTokenFile = __DIR__ . '/../var/accessToken.json';
 
 		$this->time = time();
 
