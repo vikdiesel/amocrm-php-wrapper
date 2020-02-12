@@ -1,0 +1,19 @@
+{
+  "name": "vikdiesel/amocrm-php-wrapper",
+  "description": "AmoCRM php wrapper",
+  "keywords": [
+    "amocrm",
+    "php"
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "AmoCrmPhpWrapper\\Package\\": "src/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.5.2",
+    "php": "^7.2",
+    "ext-json": "*"
+  }
+}
